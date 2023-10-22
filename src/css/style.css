@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --accent: #E54065;
+    --bg: #f4f5f9;
+    --border: #cfd2dc;
+    --text: #636363;
+    --filter-btn: #e1e4ea;
+    --read-bg: #f2f2f2;
+}
+
+body {
+    color: var(--text);
+    background-color: var(--bg);
+}
+.f-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+.align-center {
+    align-items: center;
+}
+.align-start {
+    align-items: flex-start;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between !important;
+}
+.flex-col {
+    flex-direction: column;
+}
+.my-1 {
+    margin: 1rem 0;
+}
+.my-s {
+    margin: .5rem 0;
+}
+.gap-1 {
+    gap: .5rem
+}
+.gap-2 {
+    gap: 1rem
+}
+.gap-3 {
+    gap: 2rem
+}
+.font-xs {
+    font-size: .9rem;
+}
+.w-full {
+    width: 100%;
+}
+.container {
+    width: 90vw;
+    margin: 1rem auto;
+}
+.filter h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.filter button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--text);
+    font-size: 1rem;
+    padding: 4px 12px;
+    border-radius: 555px;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.filter button:hover {
+    background-color: var(--filter-btn);
+}
+.filter-active {
+    background-color: var(--filter-btn);
+}
+.card-container {
+    max-width: 90vw;
+}
+.email-body {
+    min-width: 60%;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: white;
+}
+.card {
+    padding: .5rem 1rem;
+    margin-bottom: .5rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background-color: white;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.card:hover {
+    border-color: var(--accent);
+}
+.logo {
+    height: 40px;
+    width: 40px;
+    background-color: var(--accent);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+.card-body {
+    font-size: 1rem;
+    flex-direction: column;
+}
+.read-card {
+    background-color: var(--read-bg);
+}
+.fav-btn {
+    border: none;
+    outline: none;
+    padding: 5px 1rem;
+    border-radius: 333px;
+    background-color: var(--accent);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+.fav-btn:hover {
+    color: var(--accent);
+    background-color: var(--read-bg);
+}
